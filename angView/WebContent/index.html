@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Angular 2 QuickStart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Latest compiled and minified CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- 1. Load libraries -->
+<!-- IE required polyfill -->
+<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+<script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<script src="node_modules/rxjs/bundles/Rx.js"></script>
+<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+<script src="node_modules/moment/moment.js"></script>
+<script src="node_modules/angular2/bundles/http.dev.js"></script>
+<script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+<!-- 2. Load our 'modules' -->
+
+<!-- <script src='app/component/page/sample.js'></script> -->
+<script src='app/main.js'></script>
+
+<!-- 2. Configure SystemJS -->
+<script>
+	System.config({
+		packages : {
+			app : {
+				format : 'register',
+				defaultExtension : 'js'
+			}
+		},
+		map : {
+		/* 'datepicker': 'node_modules/angular2-simple-datepicker/app/datepicker.js' */
+		/*,'moment': 'node_modules/moment/moment.js'*/
+		}
+
+	});
+	System.import('app/main').then(null, console.error.bind(console));
+</script>
+</head>
+
+<!-- 3. Display the application -->
+<body>
+	<question-paper>Loading...</question-paper>
+	<!-- <app>Loading...</app> -->
+</body>
+
+</html>
