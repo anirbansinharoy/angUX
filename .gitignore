@@ -1,0 +1,8 @@
+node_modules
+bin
+.settings
+.metadata
+typings
+classes
+*.log
+target
